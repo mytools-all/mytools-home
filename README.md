@@ -8,6 +8,8 @@ Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用�
 
 ## 插件
 
+npm 发布正在等待账号二次认证，索引中的 `published: false` 表示尚不可从 npm 安装。
+
 插件 npm 作用域为 `@mytools-all`；[database.json](plugins/database.json) 维护包名与版本索引。各插件可独立开发、测试和发布。
 
 | 插件仓库 | npm 包 |
