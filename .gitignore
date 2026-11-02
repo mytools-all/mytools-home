@@ -1,0 +1,11 @@
+/app/
+/plugins/*/
+/.migration-backup/
+/.release-tools/
+/.opencode/
+/.git-old/
+*.log
+.npmrc
+.env*
+/node_modules/
+/src-tauri/
