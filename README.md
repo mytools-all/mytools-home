@@ -28,6 +28,10 @@ npm 发布正在等待账号二次认证，索引中的 `published: false` 表�
 | [mytools-rename](https://github.com/mytools-all/mytools-rename) | [@mytools-all/mytools-rename](https://www.npmjs.com/package/@mytools-all/mytools-rename) |
 | [mytools-search](https://github.com/mytools-all/mytools-search) | [@mytools-all/mytools-search](https://www.npmjs.com/package/@mytools-all/mytools-search) |
 
+## 发布进度
+
+宿主、索引和 8 个插件仓库已推送。GitHub 创建频率限制解除后继续创建：mytools-json、mytools-markdown、mytools-ocr、mytools-rename、mytools-search。13 个 npm 包已生成并验证，待完成 npm 发布认证后逐个发布。
+
 ## 本地布局
 
 ```text
