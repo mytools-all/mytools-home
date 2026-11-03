@@ -8,7 +8,7 @@ Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用�
 
 ## 插件
 
-全部 13 个插件已发布到 npm，并通过版本及 tarball 完整性校验。索引中的 `published: true` 表示已经核验可用。
+全部 12 个插件已发布到 npm，并通过版本及 tarball 完整性校验。索引中的 `published: true` 表示已经核验可用。
 
 插件 npm 作用域为 `@mytools-all`；[database.json](plugins/database.json) 维护包名与版本索引。各插件可独立开发、测试和发布。
 
@@ -20,7 +20,6 @@ Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用�
 | [mytools-color](https://github.com/mytools-all/mytools-color) | [@mytools-all/mytools-color](https://www.npmjs.com/package/@mytools-all/mytools-color) |
 | [mytools-color-picker](https://github.com/mytools-all/mytools-color-picker) | [@mytools-all/mytools-color-picker](https://www.npmjs.com/package/@mytools-all/mytools-color-picker) |
 | [mytools-ctool](https://github.com/mytools-all/mytools-ctool) | [@mytools-all/mytools-ctool](https://www.npmjs.com/package/@mytools-all/mytools-ctool) |
-| [mytools-hello](https://github.com/mytools-all/mytools-hello) | [@mytools-all/mytools-hello](https://www.npmjs.com/package/@mytools-all/mytools-hello) |
 | [mytools-ipconfig](https://github.com/mytools-all/mytools-ipconfig) | [@mytools-all/mytools-ipconfig](https://www.npmjs.com/package/@mytools-all/mytools-ipconfig) |
 | [mytools-json](https://github.com/mytools-all/mytools-json) | [@mytools-all/mytools-json](https://www.npmjs.com/package/@mytools-all/mytools-json) |
 | [mytools-markdown](https://github.com/mytools-all/mytools-markdown) | [@mytools-all/mytools-markdown](https://www.npmjs.com/package/@mytools-all/mytools-markdown) |
@@ -30,7 +29,7 @@ Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用�
 
 ## 发布进度
 
-宿主、索引和全部 13 个插件仓库已推送到 GitHub。13 个 npm 包均已发布为 0.1.0，可通过 MyTools 的 npm 安装入口安装。
+宿主、索引和全部 12 个插件仓库已推送到 GitHub。12 个 npm 包均已发布为 0.1.0，可通过 MyTools 的 npm 安装入口安装。
 
 ## 本地布局
 
@@ -52,3 +51,5 @@ mytools-home/
 安装始终使用宿主当前统一插件根目录，不为单个插件选择位置。目录中的能力描述用于展示，运行权限仍以安装包清单与宿主校验为准。
 
 `demo-hello` 已更名为 `mytools-demo`；旧 GitHub 地址重定向，新 npm 包为 `@mytools-all/mytools-demo`，旧包保留迁移弃用提示。
+
+示例源码统一维护在 mytools-demo，已合并 mytools-hello 的两个读取操作。按维护者要求暂不发布新版，因此 npm 的 mytools-demo@0.1.0 仍为原始三项演示；合并源码可通过本地目录安装。
