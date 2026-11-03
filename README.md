@@ -8,7 +8,7 @@ Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用�
 
 ## 插件
 
-全部 12 个插件已发布到 npm，并通过版本及 tarball 完整性校验。索引中的 `published: true` 表示已经核验可用。
+11 个工具插件可从 npm 安装；mytools-demo 的合并源码已完成，其 npm 包已被撤回，等待重新发布。索引中的 `published: true` 表示已经核验可用。
 
 插件 npm 作用域为 `@mytools-all`；[database.json](plugins/database.json) 维护包名与版本索引。各插件可独立开发、测试和发布。
 
@@ -29,7 +29,7 @@ Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用�
 
 ## 发布进度
 
-宿主、索引和全部 12 个插件仓库已推送到 GitHub。12 个 npm 包均已发布为 0.1.0，可通过 MyTools 的 npm 安装入口安装。
+宿主、索引和全部 12 个插件仓库已推送到 GitHub。11 个工具 npm 包可安装，统一 Demo 目前通过合并源码目录安装，重新发布完成后更新索引。
 
 ## 本地布局
 
@@ -50,6 +50,6 @@ mytools-home/
 
 安装始终使用宿主当前统一插件根目录，不为单个插件选择位置。目录中的能力描述用于展示，运行权限仍以安装包清单与宿主校验为准。
 
-`demo-hello` 已更名为 `mytools-demo`；旧 GitHub 地址重定向，新 npm 包为 `@mytools-all/mytools-demo`，旧包保留迁移弃用提示。
+`demo-hello` 已更名为 `mytools-demo`；旧 GitHub 地址重定向，新 npm 包为 `@mytools-all/mytools-demo`，旧 demo-hello npm 包已撤回。
 
-示例源码统一维护在 mytools-demo，已合并 mytools-hello 的两个读取操作。按维护者要求暂不发布新版，因此 npm 的 mytools-demo@0.1.0 仍为原始三项演示；合并源码可通过本地目录安装。
+示例源码统一维护在 mytools-demo，已合并 mytools-hello 的两个读取操作。mytools-demo 的旧 npm 包已由维护者撤回，合并源码可通过本地目录安装；相同包版本不能重复发布，重新发布需遵循 npm 的时间和版本限制。
