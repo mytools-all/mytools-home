@@ -14,7 +14,7 @@ Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用�
 
 | 插件仓库 | npm 包 |
 |---|---|
-| [demo-hello](https://github.com/mytools-all/demo-hello) | [@mytools-all/demo-hello](https://www.npmjs.com/package/@mytools-all/demo-hello) |
+| [mytools-demo](https://github.com/mytools-all/mytools-demo) | [@mytools-all/mytools-demo](https://www.npmjs.com/package/@mytools-all/mytools-demo) |
 | [mytools-calc](https://github.com/mytools-all/mytools-calc) | [@mytools-all/mytools-calc](https://www.npmjs.com/package/@mytools-all/mytools-calc) |
 | [mytools-clipboard](https://github.com/mytools-all/mytools-clipboard) | [@mytools-all/mytools-clipboard](https://www.npmjs.com/package/@mytools-all/mytools-clipboard) |
 | [mytools-color](https://github.com/mytools-all/mytools-color) | [@mytools-all/mytools-color](https://www.npmjs.com/package/@mytools-all/mytools-color) |
@@ -43,4 +43,12 @@ mytools-home/
     └── <插件名>/           # 每个插件独立仓库
 ```
 
-根仓库只跟踪索引和介绍；app 和插件目录不作为子模块提交。克隆本仓库不会自动下载它们，请根据上面的链接分别克隆。宿主当前使用自带商店目录快照，npm 负责包分发；远程 JSON 动态同步尚未接入。
+根仓库只跟踪索引和介绍；app 和插件目录不作为子模块提交。克隆本仓库不会自动下载它们，请根据上面的链接分别克隆。插件商店进入时读取本仓库的 plugins/database.json，更新失败时使用已验证缓存或随应用提供的离线快照。分类、简介、作者、版本、关键词和使用说明均以此 JSON 为商店维护入口；npm 负责实际包分发。
+
+## 索引维护
+
+只编辑 `plugins/database.json` 并推送。本软件会异步刷新商店目录，字段会在前端严格校验。当前格式为 schemaVersion 2，每项包含插件身份 name、npm 包名、版本、published、title、description、category、author、license、repository、features、keywords、notes 和 capabilities；icon、homepage、reference、replaces 可选。参考链接只用于说明交互来源。
+
+安装始终使用宿主当前统一插件根目录，不为单个插件选择位置。目录中的能力描述用于展示，运行权限仍以安装包清单与宿主校验为准。
+
+`demo-hello` 已更名为 `mytools-demo`；旧 GitHub 地址重定向，新 npm 包为 `@mytools-all/mytools-demo`，旧包保留迁移弃用提示。
