@@ -6,91 +6,91 @@
       "npm": "@mytools-all/demo-hello",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/demo-hello",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-calc",
       "npm": "@mytools-all/mytools-calc",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-calc",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-clipboard",
       "npm": "@mytools-all/mytools-clipboard",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-clipboard",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-color",
       "npm": "@mytools-all/mytools-color",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-color",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-color-picker",
       "npm": "@mytools-all/mytools-color-picker",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-color-picker",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-ctool",
       "npm": "@mytools-all/mytools-ctool",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-ctool",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-hello",
       "npm": "@mytools-all/mytools-hello",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-hello",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-ipconfig",
       "npm": "@mytools-all/mytools-ipconfig",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-ipconfig",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-json",
       "npm": "@mytools-all/mytools-json",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-json",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-markdown",
       "npm": "@mytools-all/mytools-markdown",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-markdown",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-ocr",
       "npm": "@mytools-all/mytools-ocr",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-ocr",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-rename",
       "npm": "@mytools-all/mytools-rename",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-rename",
-      "published": false
+      "published": true
     },
     {
       "name": "mytools-search",
       "npm": "@mytools-all/mytools-search",
       "version": "0.1.0",
       "repository": "https://github.com/mytools-all/mytools-search",
-      "published": false
+      "published": true
     }
   ]
 }

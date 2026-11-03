@@ -8,7 +8,7 @@ Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用�
 
 ## 插件
 
-npm 发布正在等待账号二次认证，索引中的 `published: false` 表示尚不可从 npm 安装。
+全部 13 个插件已发布到 npm，并通过版本及 tarball 完整性校验。索引中的 `published: true` 表示已经核验可用。
 
 插件 npm 作用域为 `@mytools-all`；[database.json](plugins/database.json) 维护包名与版本索引。各插件可独立开发、测试和发布。
 
@@ -30,7 +30,7 @@ npm 发布正在等待账号二次认证，索引中的 `published: false` 表�
 
 ## 发布进度
 
-宿主、索引和全部 13 个插件仓库已推送到 GitHub。13 个 npm 包已生成并验证，待完成 npm 发布认证后逐个发布。
+宿主、索引和全部 13 个插件仓库已推送到 GitHub。13 个 npm 包均已发布为 0.1.0，可通过 MyTools 的 npm 安装入口安装。
 
 ## 本地布局
 
