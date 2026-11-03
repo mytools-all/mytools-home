@@ -1,6 +1,6 @@
 # MyTools 项目索引
 
-Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用独立 Git 仓库；项目代码使用 MIT，第三方代码保留自身许可。当前统一版本 0.1.0。
+Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用独立 Git 仓库；项目代码使用 MIT，第三方代码保留自身许可。宿主和其他工具当前版本为 0.1.0，合并 Demo 为 0.1.1（待重新发布）。
 
 ## 宿主
 
@@ -52,6 +52,6 @@ mytools-home/
 
 `demo-hello` 已更名为 `mytools-demo`；旧 GitHub 地址重定向，新 npm 包为 `@mytools-all/mytools-demo`，旧 demo-hello npm 包已撤回。
 
-示例源码统一维护在 mytools-demo，已合并 mytools-hello 的两个读取操作。mytools-demo 的旧 npm 包已由维护者撤回，合并源码可通过本地目录安装；相同包版本不能重复发布，重新发布需遵循 npm 的时间和版本限制。
+示例源码统一维护在 mytools-demo，已合并 mytools-hello 的两个读取操作。mytools-demo 的旧 npm 包已由维护者撤回，合并源码可通过本地目录安装；相同包版本不能重复发布，合并版已确定为 0.1.1，重新发布需等待 npm 撤包冷却期结束。
 
 清理状态：mytools-hello 的 GitHub 仓库及 npm 包、demo-hello 的 npm 包均已移除；GitHub 的 demo-hello 旧链接仅重定向至保留的 mytools-demo 仓库。
