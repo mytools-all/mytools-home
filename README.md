@@ -53,3 +53,5 @@ mytools-home/
 `demo-hello` 已更名为 `mytools-demo`；旧 GitHub 地址重定向，新 npm 包为 `@mytools-all/mytools-demo`，旧 demo-hello npm 包已撤回。
 
 示例源码统一维护在 mytools-demo，已合并 mytools-hello 的两个读取操作。mytools-demo 的旧 npm 包已由维护者撤回，合并源码可通过本地目录安装；相同包版本不能重复发布，重新发布需遵循 npm 的时间和版本限制。
+
+清理状态：mytools-hello 的 GitHub 仓库及 npm 包、demo-hello 的 npm 包均已移除；GitHub 的 demo-hello 旧链接仅重定向至保留的 mytools-demo 仓库。
