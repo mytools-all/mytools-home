@@ -55,3 +55,9 @@ mytools-home/
 示例源码统一维护在 mytools-demo，已合并 mytools-hello 的两个读取操作。mytools-demo 的旧 npm 包已由维护者撤回，合并源码可通过本地目录安装；相同包版本不能重复发布，合并版已确定为 0.1.1，重新发布需等待 npm 撤包冷却期结束。
 
 清理状态：mytools-hello 的 GitHub 仓库及 npm 包、demo-hello 的 npm 包均已移除；GitHub 的 demo-hello 旧链接仅重定向至保留的 mytools-demo 仓库。
+
+## 跨工具交接与插件开发
+
+任何 AI 工具或维护者先读 [AGENTS.md](AGENTS.md)。克隆宿主后使用 [项目上下文](https://github.com/mytools-all/mytools/blob/main/docs/PROJECT-CONTEXT.md)、[插件开发指南](https://github.com/mytools-all/mytools/blob/main/docs/plugin-development/README.md) 和 [Demo 案例](https://github.com/mytools-all/mytools/blob/main/docs/plugin-development/demo-walkthrough.md)，不依赖历史聊天。
+
+本地新增“我的日历”验证插件位于 plugins/mytools-calendar，版本 0.1.0；支持公农历/节日、闰月跳转和每日标签待办。源码仓库为 [mytools-calendar](https://github.com/mytools-all/mytools-calendar)，未发布 npm，索引 published:false。详见宿主 docs/plugin-development/validation-calendar.md。
