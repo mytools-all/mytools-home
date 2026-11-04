@@ -8,12 +8,13 @@ Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用�
 
 ## 插件
 
-共 13 个插件可从 npm 安装，包含我的日历 0.1.0 和合并 Demo 0.1.1。索引中的 `published: true` 表示已经核验可用。
+共 14 个插件可从 npm 安装，包含我的日历 0.1.0 和合并 Demo 0.1.1。索引中的 `published: true` 表示已经核验可用。
 
 插件 npm 作用域为 `@mytools-all`；[database.json](plugins/database.json) 维护包名与版本索引。各插件可独立开发、测试和发布。
 
 | 插件仓库 | npm 包 |
 |---|---|
+| [mytools-clock](https://github.com/mytools-all/mytools-clock) | [@mytools-all/mytools-clock](https://www.npmjs.com/package/@mytools-all/mytools-clock) |
 | [mytools-demo](https://github.com/mytools-all/mytools-demo) | [@mytools-all/mytools-demo](https://www.npmjs.com/package/@mytools-all/mytools-demo) |
 | [mytools-calendar](https://github.com/mytools-all/mytools-calendar) | [@mytools-all/mytools-calendar](https://www.npmjs.com/package/@mytools-all/mytools-calendar) |
 | [mytools-calc](https://github.com/mytools-all/mytools-calc) | [@mytools-all/mytools-calc](https://www.npmjs.com/package/@mytools-all/mytools-calc) |
@@ -62,3 +63,7 @@ mytools-home/
 任何 AI 工具或维护者先读 [AGENTS.md](AGENTS.md)。克隆宿主后使用 [项目上下文](https://github.com/mytools-all/mytools/blob/main/docs/PROJECT-CONTEXT.md)、[插件开发指南](https://github.com/mytools-all/mytools/blob/main/docs/plugin-development/README.md) 和 [Demo 案例](https://github.com/mytools-all/mytools/blob/main/docs/plugin-development/demo-walkthrough.md)，不依赖历史聊天。
 
 本地新增“我的日历”验证插件位于 plugins/mytools-calendar，版本 0.1.0；支持公农历/节日、闰月跳转和每日标签待办。源码仓库为 [mytools-calendar](https://github.com/mytools-all/mytools-calendar)，已发布 npm，索引 published:true。详见宿主 docs/plugin-development/validation-calendar.md。
+
+打卡 0.1.0 已发布并核验下载；日历 npm 保留 0.1.0，GitHub 源码 0.1.1 包含待发布的新功能。
+
+MyTools 正式安装包见 [v0.1.0 Release](https://github.com/mytools-all/mytools/releases/tag/v0.1.0)。

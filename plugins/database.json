@@ -507,10 +507,48 @@
         "0.1.0 已发布到 npm，包含放假/调休标记和手动更新按钮。",
         "内置中国大陆 2025、2026 年安排；其他年份可手动更新，数据源未提供有效安排时保留原数据。",
         "手动更新使用 holiday-cn 第三方整理数据，官方通知可单独查看；仅点击更新时联网，不上传待办。",
-        "本机存储；多窗口请顺序编辑，重新打开载入最新数据。"
+        "本机存储；多窗口请顺序编辑，重新打开载入最新数据。",
+        "Todo 导入导出与批量标签管理在 GitHub 源码 0.1.1 中提供，按维护者要求暂不更新 npm 版本。"
       ],
       "homepage": "https://github.com/mytools-all/mytools-calendar#readme",
       "icon": "https://raw.githubusercontent.com/mytools-all/mytools-calendar/main/icon.svg"
+    },
+    {
+      "name": "mytools-clock",
+      "npm": "@mytools-all/mytools-clock",
+      "version": "0.1.0",
+      "published": true,
+      "title": "打卡",
+      "description": "成对记录上下班，计算最早下班时间与多周期工时统计",
+      "category": "效率",
+      "author": "MyTools",
+      "license": "MIT",
+      "repository": "https://github.com/mytools-all/mytools-clock",
+      "features": [
+        "简洁与复杂页面、侧边设置",
+        "按每日工时或固定时间限制即时下班",
+        "目标工时、当天工时与最早下班计算",
+        "日周月季度年与自定义范围统计",
+        "Markdown、Excel XML、JSON 导出及 JSON 确认合并导入"
+      ],
+      "keywords": [
+        "打卡",
+        "工时",
+        "上班",
+        "考勤",
+        "clock"
+      ],
+      "capabilities": [
+        "storage.get",
+        "storage.set",
+        "fs.exporttext"
+      ],
+      "notes": [
+        "0.1.0 已发布 npm，并已核验公开元数据及实际下载归档。",
+        "Excel 导出为可直接打开的 XML 工作簿，JSON 为完整备份；不连接企业考勤系统。"
+      ],
+      "homepage": "https://github.com/mytools-all/mytools-clock#readme",
+      "icon": "https://raw.githubusercontent.com/mytools-all/mytools-clock/main/icon.svg"
     }
   ]
 }
