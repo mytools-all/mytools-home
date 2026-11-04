@@ -16,7 +16,7 @@
 - 中文界面，项目 MIT，保留第三方许可证。不新增无必要的代码注释。
 - 不提交凭据、用户数据、node_modules、target、.npmrc、.env、调试备份。
 - 本地修改和安装不代表已经发布。未经当前任务授权，不推送 GitHub、不发布 npm。
-- 未发布插件在索引标记 published:false；mytools-demo 0.1.1 的发布需单独确认实际状态。
+- 未发布插件在索引标记 published:false；已核验 mytools-demo 0.1.1 和 mytools-calendar 0.1.0 于 2026-11-04 发布，后续升级仍需明确授权。
 - 完成时说明实际检查结果与未验证事项，不把模拟测试当作原生验收。
 
 ## 可直接交给其他 AI 的任务开头
