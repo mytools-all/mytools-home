@@ -5,13 +5,13 @@
 ## 先读什么
 
 1. `README.md`：仓库布局与项目链接。
-2. `app/docs/PROJECT-CONTEXT.md`：实际架构、运行、数据、边界与已知限制。
-3. 修改宿主前读 `app/AGENTS.md`；开发插件读 `app/docs/plugin-development/README.md`。
+2. `../mytools/docs/PROJECT-CONTEXT.md`：实际架构、运行、数据、边界与已知限制。
+3. 修改宿主前读 `../mytools/AGENTS.md`；开发插件读 `../mytools/docs/plugin-development/README.md`。
 4. 可运行示例是 `plugins/mytools-demo`；完整业务验证是 `plugins/mytools-calendar`。
 
 ## 工作约定
 
-- 根目录是 mytools-home 索引仓库；app 和每个插件都是独立仓库。先检查对应目录的 git status，保留未提交工作。
+- mytools-home 是索引仓库；宿主 mytools 与 plugins/<name> 在工作区并列放置，各自为独立仓库。先检查对应目录的 git status，保留未提交工作。
 - 插件独立交付，不引用 app 源码、不直调 Tauri、不因一个插件新增宿主特例。
 - 中文界面，项目 MIT，保留第三方许可证。不新增无必要的代码注释。
 - 不提交凭据、用户数据、node_modules、target、.npmrc、.env、调试备份。
@@ -21,6 +21,8 @@
 
 ## 可直接交给其他 AI 的任务开头
 
-“先阅读 AGENTS.md、app/docs/PROJECT-CONTEXT.md 和目标目录的说明，检查 Git 状态。只改本次目标，完成相关测试并报告结果。插件通过公开 API 开发；规范缺项先补文档，再实现，不根据聊天历史猜接口。”
+“先阅读 AGENTS.md、../mytools/docs/PROJECT-CONTEXT.md 和目标目录的说明，检查 Git 状态。只改本次目标，完成相关测试并报告结果。插件通过公开 API 开发；规范缺项先补文档，再实现，不根据聊天历史猜接口。”
 
 2026-11-04 发布状态：打卡 mytools-clock 0.1.0 已发布 npm 并核验下载；日历 GitHub 源码为 0.1.1，用户明确要求 npm 暂保留已发布 0.1.0，不自动发布日历 0.1.1。宿主本次正式 Release 为 v0.1.0。
+
+2026-11-20：已按用户明确授权发布本轮插件更新，并新增电脑助手。当前 npm 版本以 plugins/database.json 为准；后续发布仍需用户授权。

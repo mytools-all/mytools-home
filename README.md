@@ -1,69 +1,43 @@
 # MyTools 项目索引
 
-Windows 插件工具箱，Tauri 2 + Vue 3 + Rust。宿主和每个插件使用独立 Git 仓库；项目代码使用 MIT，第三方代码保留自身许可。宿主和其他工具当前版本为 0.1.0，合并 Demo 为 0.1.1；我的日历为 0.1.0。
+Windows 插件工具箱，宿主使用 Tauri 2、Vue 3 和 Rust。宿主与每个插件各自维护独立 Git 仓库，项目代码采用 MIT，第三方代码保留自身许可。
 
 ## 宿主
 
-[mytools](https://github.com/mytools-all/mytools)：应用平台、启动器、插件管理、我的面板、权限与宿主能力。克隆到本地 app 目录后按该仓库 README 构建。
+[mytools](https://github.com/mytools-all/mytools) 提供启动器、插件管理、资源管理、鼠标中键面板、托盘与宿主能力。剪贴板图片、面板截图和电脑助手依赖当前 main 分支新增能力；现有 0.1.0 正式安装包不包含全部更新，使用前请按宿主 README 从源码构建。
 
 ## 插件
 
-共 14 个插件可从 npm 安装，包含我的日历 0.1.0 和合并 Demo 0.1.1。索引中的 `published: true` 表示已经核验可用。
+共 15 个插件可通过 npm 安装。包名和版本以 [plugins/database.json](plugins/database.json) 为准；published:true 表示已核验对应版本可以查询和下载。
 
-插件 npm 作用域为 `@mytools-all`；[database.json](plugins/database.json) 维护包名与版本索引。各插件可独立开发、测试和发布。
-
-| 插件仓库 | npm 包 |
-|---|---|
-| [mytools-clock](https://github.com/mytools-all/mytools-clock) | [@mytools-all/mytools-clock](https://www.npmjs.com/package/@mytools-all/mytools-clock) |
-| [mytools-demo](https://github.com/mytools-all/mytools-demo) | [@mytools-all/mytools-demo](https://www.npmjs.com/package/@mytools-all/mytools-demo) |
-| [mytools-calendar](https://github.com/mytools-all/mytools-calendar) | [@mytools-all/mytools-calendar](https://www.npmjs.com/package/@mytools-all/mytools-calendar) |
-| [mytools-calc](https://github.com/mytools-all/mytools-calc) | [@mytools-all/mytools-calc](https://www.npmjs.com/package/@mytools-all/mytools-calc) |
-| [mytools-clipboard](https://github.com/mytools-all/mytools-clipboard) | [@mytools-all/mytools-clipboard](https://www.npmjs.com/package/@mytools-all/mytools-clipboard) |
-| [mytools-color](https://github.com/mytools-all/mytools-color) | [@mytools-all/mytools-color](https://www.npmjs.com/package/@mytools-all/mytools-color) |
-| [mytools-color-picker](https://github.com/mytools-all/mytools-color-picker) | [@mytools-all/mytools-color-picker](https://www.npmjs.com/package/@mytools-all/mytools-color-picker) |
-| [mytools-ctool](https://github.com/mytools-all/mytools-ctool) | [@mytools-all/mytools-ctool](https://www.npmjs.com/package/@mytools-all/mytools-ctool) |
-| [mytools-ipconfig](https://github.com/mytools-all/mytools-ipconfig) | [@mytools-all/mytools-ipconfig](https://www.npmjs.com/package/@mytools-all/mytools-ipconfig) |
-| [mytools-json](https://github.com/mytools-all/mytools-json) | [@mytools-all/mytools-json](https://www.npmjs.com/package/@mytools-all/mytools-json) |
-| [mytools-markdown](https://github.com/mytools-all/mytools-markdown) | [@mytools-all/mytools-markdown](https://www.npmjs.com/package/@mytools-all/mytools-markdown) |
-| [mytools-ocr](https://github.com/mytools-all/mytools-ocr) | [@mytools-all/mytools-ocr](https://www.npmjs.com/package/@mytools-all/mytools-ocr) |
-| [mytools-rename](https://github.com/mytools-all/mytools-rename) | [@mytools-all/mytools-rename](https://www.npmjs.com/package/@mytools-all/mytools-rename) |
-| [mytools-search](https://github.com/mytools-all/mytools-search) | [@mytools-all/mytools-search](https://www.npmjs.com/package/@mytools-all/mytools-search) |
-
-## 发布进度
-
-宿主、索引和全部 13 个插件仓库已推送到 GitHub。13 个 npm 包可安装；我的日历 0.1.0、统一 Demo 0.1.1 已在 2026-11-04 发布，并核验公开下载内容。
+| 插件 | 版本 | GitHub | npm |
+|---|---|---|---|
+| MyTools Demo | 0.1.1 | [mytools-demo](https://github.com/mytools-all/mytools-demo) | [@mytools-all/mytools-demo](https://www.npmjs.com/package/@mytools-all/mytools-demo) |
+| 计算稿纸 | 0.1.1 | [mytools-calc](https://github.com/mytools-all/mytools-calc) | [@mytools-all/mytools-calc](https://www.npmjs.com/package/@mytools-all/mytools-calc) |
+| 系统剪贴板 | 0.1.1 | [mytools-clipboard](https://github.com/mytools-all/mytools-clipboard) | [@mytools-all/mytools-clipboard](https://www.npmjs.com/package/@mytools-all/mytools-clipboard) |
+| 颜色助手 | 0.1.1 | [mytools-color](https://github.com/mytools-all/mytools-color) | [@mytools-all/mytools-color](https://www.npmjs.com/package/@mytools-all/mytools-color) |
+| 屏幕取色器 | 0.1.1 | [mytools-color-picker](https://github.com/mytools-all/mytools-color-picker) | [@mytools-all/mytools-color-picker](https://www.npmjs.com/package/@mytools-all/mytools-color-picker) |
+| Ctool | 0.1.0 | [mytools-ctool](https://github.com/mytools-all/mytools-ctool) | [@mytools-all/mytools-ctool](https://www.npmjs.com/package/@mytools-all/mytools-ctool) |
+| ipconfig | 0.1.0 | [mytools-ipconfig](https://github.com/mytools-all/mytools-ipconfig) | [@mytools-all/mytools-ipconfig](https://www.npmjs.com/package/@mytools-all/mytools-ipconfig) |
+| JSON 编辑器 | 0.1.0 | [mytools-json](https://github.com/mytools-all/mytools-json) | [@mytools-all/mytools-json](https://www.npmjs.com/package/@mytools-all/mytools-json) |
+| Markdown 编辑器 | 0.1.1 | [mytools-markdown](https://github.com/mytools-all/mytools-markdown) | [@mytools-all/mytools-markdown](https://www.npmjs.com/package/@mytools-all/mytools-markdown) |
+| 图片 OCR | 0.2.0 | [mytools-ocr](https://github.com/mytools-all/mytools-ocr) | [@mytools-all/mytools-ocr](https://www.npmjs.com/package/@mytools-all/mytools-ocr) |
+| 文件批量重命名 | 0.1.0 | [mytools-rename](https://github.com/mytools-all/mytools-rename) | [@mytools-all/mytools-rename](https://www.npmjs.com/package/@mytools-all/mytools-rename) |
+| 本地搜索 | 0.1.1 | [mytools-search](https://github.com/mytools-all/mytools-search) | [@mytools-all/mytools-search](https://www.npmjs.com/package/@mytools-all/mytools-search) |
+| 我的日历 | 0.2.0 | [mytools-calendar](https://github.com/mytools-all/mytools-calendar) | [@mytools-all/mytools-calendar](https://www.npmjs.com/package/@mytools-all/mytools-calendar) |
+| 打卡 | 0.1.0 | [mytools-clock](https://github.com/mytools-all/mytools-clock) | [@mytools-all/mytools-clock](https://www.npmjs.com/package/@mytools-all/mytools-clock) |
+| 电脑助手 | 0.1.1 | [mytools-computer-assistant](https://github.com/mytools-all/mytools-computer-assistant) | [@mytools-all/mytools-computer-assistant](https://www.npmjs.com/package/@mytools-all/mytools-computer-assistant) |
 
 ## 本地布局
 
+建议将三个目录并列放置，每个插件保持独立仓库：
+
 ```text
-mytools-home/
-├── README.md
-├── app/                    # mytools 独立仓库
+MyTools/
+├── mytools/
+├── mytools-home/
 └── plugins/
-    ├── database.json       # 本仓库管理
-    └── <插件名>/           # 每个插件独立仓库
+    └── <插件名>/
 ```
 
-根仓库只跟踪索引和介绍；app 和插件目录不作为子模块提交。克隆本仓库不会自动下载它们，请根据上面的链接分别克隆。插件商店进入时读取本仓库的 plugins/database.json，更新失败时使用已验证缓存或随应用提供的离线快照。分类、简介、作者、版本、关键词和使用说明均以此 JSON 为商店维护入口；npm 负责实际包分发。
-
-## 索引维护
-
-只编辑 `plugins/database.json` 并推送。本软件会异步刷新商店目录，字段会在前端严格校验。当前格式为 schemaVersion 2，每项包含插件身份 name、npm 包名、版本、published、title、description、category、author、license、repository、features、keywords、notes 和 capabilities；icon、homepage、reference、replaces 可选。参考链接只用于说明交互来源。
-
-安装始终使用宿主当前统一插件根目录，不为单个插件选择位置。目录中的能力描述用于展示，运行权限仍以安装包清单与宿主校验为准。
-
-`demo-hello` 已更名为 `mytools-demo`；旧 GitHub 地址重定向，新 npm 包为 `@mytools-all/mytools-demo`，旧 demo-hello npm 包已撤回。
-
-示例源码统一维护在 mytools-demo，已合并 mytools-hello 的两个读取操作。旧版本撤回后，合并版已作为 @mytools-all/mytools-demo@0.1.1 重新发布并核验可安装。
-
-清理状态：mytools-hello 的 GitHub 仓库及 npm 包、demo-hello 的 npm 包均已移除；GitHub 的 demo-hello 旧链接仅重定向至保留的 mytools-demo 仓库。
-
-## 跨工具交接与插件开发
-
-任何 AI 工具或维护者先读 [AGENTS.md](AGENTS.md)。克隆宿主后使用 [项目上下文](https://github.com/mytools-all/mytools/blob/main/docs/PROJECT-CONTEXT.md)、[插件开发指南](https://github.com/mytools-all/mytools/blob/main/docs/plugin-development/README.md) 和 [Demo 案例](https://github.com/mytools-all/mytools/blob/main/docs/plugin-development/demo-walkthrough.md)，不依赖历史聊天。
-
-本地新增“我的日历”验证插件位于 plugins/mytools-calendar，版本 0.1.0；支持公农历/节日、闰月跳转和每日标签待办。源码仓库为 [mytools-calendar](https://github.com/mytools-all/mytools-calendar)，已发布 npm，索引 published:true。详见宿主 docs/plugin-development/validation-calendar.md。
-
-打卡 0.1.0 已发布并核验下载；日历 npm 保留 0.1.0，GitHub 源码 0.1.1 包含待发布的新功能。
-
-MyTools 正式安装包见 [v0.1.0 Release](https://github.com/mytools-all/mytools/releases/tag/v0.1.0)。
+mytools-home 只维护项目说明和插件索引，不包含宿主或插件源码。运行中的插件目录由宿主配置决定，与源码目录相互独立。修改源码后需要重新打包安装；插件可单独更新。
